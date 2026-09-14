@@ -1,0 +1,19 @@
+# Inventory output — contains protected domains, origin IPs and security
+# posture for the whole estate. Never commit these, especially to a public repo.
+*.csv
+*.json
+!*.example.json
+
+# Saved credentials, if ever placed next to the script rather than in $HOME
+.imperva_inventory.json
+imperva_inventory.json
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# macOS
+.DS_Store
